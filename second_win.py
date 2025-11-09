@@ -1,5 +1,5 @@
 
-      from PyQt5.QtCore import Qt, QTimer, QTime, QLocale
+from PyQt5.QtCore import Qt, QTimer, QTime, QLocale
 from PyQt5.QtGui import QDoubleValidator, QIntValidator, QFont # checking the types of input values
 from PyQt5.QtWidgets import (
        QApplication, QWidget,
@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import (
        QGroupBox, QRadioButton,
        QPushButton, QLabel, QListWidget, QLineEdit)
 from instr_1 import *
-from final_win_1 import *
+from final_win import *
 class Experiment():
     def __init__(self, age, test1, test2, test3):
         self.age = age
@@ -127,4 +127,3 @@ class TestWin(QWidget):
         self.btn_test1.clicked.connect(self.timer_test)
         self.btn_test2.clicked.connect(self.timer_sits)
         self.btn_test3.clicked.connect(self.timer_final)
-        

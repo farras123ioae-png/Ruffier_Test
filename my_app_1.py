@@ -8,7 +8,7 @@ from PyQt5.QtWidgets import (
 
 
 from instr_1 import *
-from second_win_1 import *
+from second_win import *
      
 class MainWin(QWidget):
     def __init__(self):
